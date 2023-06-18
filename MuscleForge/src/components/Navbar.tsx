@@ -26,7 +26,7 @@ function Navbar() {
         <Link to='/'>Home</Link>
         <a
           href='#exercises'
-          style={{ textDecoration: 'none', color: '	 #d9d9d9' }}
+          style={{ textDecoration: 'none', color: '	 #8b0000' }}
         >
           Workouts
         </a>
