@@ -18,10 +18,11 @@ const SearchExercises = () => {
           sx={{
             input: {
               color: 'gray',
-              borderColor: 'white',
               background: 'white',
+              border: 'none',
               borderRadius: '10px',
-              width: '600px',
+              width: { lg: '1170px', xs: '350px' },
+              backgroundColor: 'smokegray',
             },
           }}
           value=''
