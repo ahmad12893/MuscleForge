@@ -25,7 +25,7 @@ const HeroBanner = () => {
         FORGED, <br />
         WITH IRON AND STEEL
       </Typography>
-      <Typography fontSize='22px' lineHeight='35px' mb={3}>
+      <Typography fontSize='22px' lineHeight='35px' mb={4}>
         View the best exercises for each muscle group
       </Typography>
       <Button
@@ -39,7 +39,7 @@ const HeroBanner = () => {
       <Typography
         fontWeight={600}
         color='#8b0000'
-        sx={{ opacity: 0.1, display: { lg: 'block', xs: 'none' } }}
+        sx={{ opacity: 0.4, display: { lg: 'block', xs: 'none' } }}
         fontSize='200px'
       >
         Exercise
