@@ -24,6 +24,7 @@ function Navbar() {
             width: '48px',
             height: '48px',
             margin: '0 20px',
+            borderRadius: '50%',
           }}
         />
       </Link>
