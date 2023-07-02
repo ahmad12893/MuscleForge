@@ -3,7 +3,7 @@ import { Stack, Typography, Box } from '@mui/material';
 import HorizontalScrollbar from './HorizontalScrollbar';
 import Loader from './Loader';
 
-const SimilarExercises = ({ equipmentRequired, targetMuscle }) => {
+const SimilarExercises = ({ equipmentRequired, targetMuscle }: any) => {
   return (
     <Box sx={{ mt: { lg: '100px', xs: '0' } }}>
       <Typography style={{ color: '#8b0000' }} variant='h3' mb={6}>

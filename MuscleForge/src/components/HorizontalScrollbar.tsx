@@ -6,9 +6,10 @@ import RightArrowIcon from '../assets/right-arrow.png';
 import ExerciseCard from './ExerciseCard';
 interface HorizontalScrollbarProps {
   data: any[];
-  bodyPart: any;
-  bodyParts: any[];
-  setBodyPart: React.Dispatch<React.SetStateAction<string>>;
+  bodyPart?: any;
+  bodyParts?: any[];
+  setBodyPart?: React.Dispatch<React.SetStateAction<string>>;
+  isBodyParts?: boolean;
 }
 
 const HorizontalScrollbar: React.FC<HorizontalScrollbarProps> = ({
