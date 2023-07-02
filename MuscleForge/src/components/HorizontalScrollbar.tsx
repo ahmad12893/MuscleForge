@@ -3,7 +3,7 @@ import { Box, Typography } from '@mui/material';
 import BodyPart from './BodyPart';
 import LeftArrowIcon from '../assets/left-arrow.png';
 import RightArrowIcon from '../assets/right-arrow.png';
-
+import ExerciseCard from './ExerciseCard';
 interface HorizontalScrollbarProps {
   data: any[];
   bodyPart: any;
@@ -13,9 +13,9 @@ interface HorizontalScrollbarProps {
 
 const HorizontalScrollbar: React.FC<HorizontalScrollbarProps> = ({
   data,
-  bodyParts,
   setBodyPart,
   bodyPart,
+  isBodyParts,
 }) => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
@@ -65,11 +65,15 @@ const HorizontalScrollbar: React.FC<HorizontalScrollbarProps> = ({
             data-title={item.id || item}
             sx={{ margin: '0 40px' }}
           >
-            <BodyPart
-              item={item}
-              setBodyPart={setBodyPart}
-              bodyPart={bodyPart}
-            />
+            {isBodyParts ? (
+              <BodyPart
+                item={item}
+                setBodyPart={setBodyPart}
+                bodyPart={bodyPart}
+              />
+            ) : (
+              <ExerciseCard exercise={item} />
+            )}
           </Box>
         ))}
       </div>
