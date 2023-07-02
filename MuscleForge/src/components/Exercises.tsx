@@ -54,16 +54,8 @@ const Exercises = ({ exercises, setExercises, bodyPart }: any) => {
         flexWrap='wrap'
         justifyContent='center'
       >
-<<<<<<< HEAD
         {currentExercises.map((exercise: any, index: any) => (
           <ExerciseCard key={index} exercise={exercise} />
-=======
-        {exercises.map((exercise, index) => (
-          <ExerciseCard
-            key={index}
-            exercise={exercise}
-          />
->>>>>>> parent of ac1a097 (better color for button)
         ))}
       </Stack>
       <Stack mt='100px' alignItems='center'>
