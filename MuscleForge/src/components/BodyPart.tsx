@@ -1,10 +1,9 @@
-import React from 'react';
 import { Stack, Typography } from '@mui/material';
 import Icon from '../assets/gym.png';
 
-const BodyPart = ({ item, setBodyPart, bodyPart }) => (
+const BodyPart = ({ item, setBodyPart, bodyPart }: any) => (
   <Stack
-    type='button'
+    style={{ cursor: 'pointer' }}
     alignItems='center'
     justifyContent='center'
     className='bodyPart-card'

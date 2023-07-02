@@ -19,7 +19,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }: any) => {
     indexLastExercise
   );
 
-  const paginate = (event: any, value: React.SetStateAction<number>) => {
+  const paginate = (_event: any, value: React.SetStateAction<number>) => {
     setCurrentPage(value);
     window.scrollTo({ top: 1800, behavior: 'smooth' });
   };

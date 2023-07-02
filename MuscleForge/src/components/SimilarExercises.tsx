@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Stack, Typography, Box } from '@mui/material';
 import HorizontalScrollbar from './HorizontalScrollbar';
 import Loader from './Loader';
