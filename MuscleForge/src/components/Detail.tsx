@@ -1,4 +1,3 @@
-
 import { Typography, Stack, Button } from '@mui/material';
 import BodyPartImg from '../assets/body-part.png';
 import TargetImg from '../assets/target.png';
