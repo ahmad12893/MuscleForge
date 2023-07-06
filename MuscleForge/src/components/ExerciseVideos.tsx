@@ -1,7 +1,8 @@
 import { Box, Stack, Typography } from '@mui/material';
+import Loader from './Loader';
 
 const ExerciseVideos = ({ exerciseVideos, name }: any) => {
-  if (!exerciseVideos || !exerciseVideos.length) return 'Loading...';
+  if (!exerciseVideos) return <Loader />;
   return (
     <Box sx={{ marginTop: { lg: '200px', xs: '20px' } }} p='20px'>
       <Typography
@@ -21,7 +22,7 @@ const ExerciseVideos = ({ exerciseVideos, name }: any) => {
           gap: { lg: '110px', xs: '0' },
         }}
       >
-        {exerciseVideos?.slice(0, 6).map((item: any, index: any) => (
+        {exerciseVideos?.slice(0, 6).map((item: any, index: number) => (
           <a
             key={index}
             className='video'
@@ -35,7 +36,7 @@ const ExerciseVideos = ({ exerciseVideos, name }: any) => {
                 {item.video.title}
               </Typography>
               <Typography variant='h6' color='#8b0000'>
-                {item.video.channleName}
+                {item.video.channelName}
               </Typography>
             </Box>
           </a>
