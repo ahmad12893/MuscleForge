@@ -11,7 +11,7 @@ export const videoOption = {
   headers: {
     headers: {
       'X-RapidAPI-Host': 'youtube-search-and-download.p.rapidapi.com',
-      'X-RapidAPI-Key': process.env.REACT_APP_RAPIDAPI_KEY2,
+      'X-RapidAPI-Key': 'f0021db587msh781fb1cbef39856p11c183jsn45521d5d1c85',
     },
   },
 };

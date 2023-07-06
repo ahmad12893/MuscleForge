@@ -22,7 +22,7 @@ const ExerciseVideos = ({ exerciseVideos, name }: any) => {
           gap: { lg: '110px', xs: '0' },
         }}
       >
-        {exerciseVideos?.slice(0, 6).map((item: any, index: number) => (
+        {exerciseVideos?.slice(0, 6).map((item: any, index: any) => (
           <a
             key={index}
             className='video'
@@ -36,7 +36,7 @@ const ExerciseVideos = ({ exerciseVideos, name }: any) => {
                 {item.video.title}
               </Typography>
               <Typography variant='h6' color='#8b0000'>
-                {item.video.channelName}
+                {item.video.channleName}
               </Typography>
             </Box>
           </a>
